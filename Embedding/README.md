@@ -18,6 +18,10 @@ Then update in e3nn:
             edge_attr = torch.ones(E, 1, device=data["pos"].device)
 ```
 
+
+atoms are given both a [moltype, atomic_number] plus a query node at center of graph for the gas. see `embed2_water_query.py`
+
+```
 atom_labels[solvent] = 0
 atom_labels[protein_atoms] = 1
 atom_labels[gas2] = 2 # for O2
@@ -25,13 +29,15 @@ atom_labels[gas2] = 2 # for O2
 atom_labels[solvent] = 0
 atom_labels[protein_atoms] = 1
 atom_labels[gas2] = 3 # for CO2
-
+```
 For example:
 
 Query O₂, neighbouring O₂
-[0, 2]    # COM of query O2
-[8, 2]    # O atom
-[8, 2]    # O atom
+```
+[2, 0]    # COM of query O2
+[2, 8]    # O atom
+[2, 8]    # O atom
+```
 Query CO₂, neighbouring O₂
 [0, 3]    # COM of query CO2
 [8, 2]    # O atom
