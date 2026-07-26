@@ -1,5 +1,11 @@
 how to embed for https://github.com/e3nn/e3nn/blob/main/e3nn/nn/models/v2106/gate_points_networks.py for 6 Ang radius graph
 
+## First off I create csv files for the long MD we already ran that includes all events < 6 Ang (6 seems to be my magic number)
+1.  First run contacts.py to get numpy file of contacts for events that reach < 6 A of Fe2+
+2.  Then run contacts_df2.py to put that into a dataframe/.csv file that could be used potentially in tree based classifiers like PathInHydro
+3.  That .csv file will be used for reading in events to embed, full with solvent, graphs using MDAanalysis and torch.
+
+
 Then update in e3nn:
 
 ```python
