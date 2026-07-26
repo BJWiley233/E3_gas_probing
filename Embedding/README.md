@@ -19,7 +19,7 @@ Then update in e3nn:
 ```
 
 
-atoms are given both a [moltype, atomic_number] plus a query node at center of graph for the gas. see `embed2_water_query.py`
+atoms are given both a [moltype, atomic_number] plus a query node at center of graph for the gas. see `data_moltype_CO2.py` after `embed2_water_query.py`
 
 ```
 atom_labels[solvent] = 0
