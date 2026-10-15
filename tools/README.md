@@ -1,12 +1,20 @@
 ### python to VMD script for the visulazation of Numpy files from [inference](https://github.com/BJWiley233/E3_gas_probing/blob/main/inference.py#L1614)
 
 ```
-python python2vmd.py <folder>
+python python2vmd.py <folder_suffix>
 
 # example
-python python2vmd.py Sim1_predict_events1 filtered1.1.tcl
-python python2vmd.py Sim7_predict_events1 filtered7.1.tcl
+folder_suffix=1
+python python2vmd.py Sim1_predict_events$folder_suffix filtered1.$folder_suffix.tcl
+python python2vmd.py Sim7_predict_events$folder_suffix filtered7.$folder_suffix.tcl
 
-python python2vmd.py Sim1_predict_events3 filtered1.3.tcl
-python python2vmd.py Sim7_predict_events3 filtered7.3.tcl
+folder_suffix=3
+python python2vmd.py Sim7_predict_events$folder_suffix filtered7.$folder_suffix.tcl
+python python2vmd.py Sim7_predict_events$folder_suffix filtered7.$folder_suffix.tcl
+
+
+
+## defualt is a bulk of Sim1-Sim10
+folder_suffix=1
+python python2vmd.py $folder_suffix filtered1.$folder_suffix.tcl
 
