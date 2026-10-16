@@ -22,7 +22,8 @@ python python2vmd.py $folder_suffix filtered
 Then to run in VMD on (centered) protein loaded:
 ```tcl
 source filtered10.1.tcl
-# output
+# output first line [START Frame] [distance starting from catalytic center] [number of frames in path to < 6 angstroms]
+# output rest [Frame] [model prediction score] [residue and atom name closest to prediction] [distance of residue/atom name closest to prediction to prediction]
 START 3200, dist 18.64767074584961, len 53
 frame 3201: score 0.985 <Residue O2IF, 26792>, OI: 0.582870
 frame 3202: score 0.992 <Residue O2IF, 26792>, OI: 0.295197
