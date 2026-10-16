@@ -57,7 +57,20 @@ frame 4207: score 0.846 <Residue CYMX, 30001>, HNZ1: 2.193465
 frame 4208: score 0.963 <Residue TIP3, 7816>, H1: 2.130443
 frame 4209: score 0.909 <Residue CYMX, 30001>, HY1: 2.122949
 frame 4210: score 0.985 <Residue CYMX, 30001>, HB2: 2.407697
+
+# optionally add frames from trajectory
+draw_event 23
+# output
+START 4500, dist 16.478944778442383, len 3
+frame 4501: score 0.902 <Residue O2IF, 26775>, OI: 0.557176
+frame 4502: score 0.979 <Residue O2IF, 26699>, OI: 0.789941
+frame 4503: score 0.96 <Residue PHE, 285>, HE1: 2.695673
+after#5172
+pause_animation
+mol addfile ../../Sim10/fit2.dcd first 4500 last 4503
+
 ```
 <img width="826" height="884" alt="image" src="https://github.com/user-attachments/assets/0133fa83-8869-42ea-ae37-e5ff79426f51" />
 
+<img width="1731" height="963" alt="image" src="https://github.com/user-attachments/assets/fe15d093-0c25-4f18-89ad-1919b6372c44" />
 
