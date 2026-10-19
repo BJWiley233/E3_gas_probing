@@ -12,4 +12,4 @@ using `train.py` which can load in any positives and negatives from any gas as l
 ## Step 3 Inference on short MD simulations
 using `inference.py` which needs to be updated for multiple gases in the possible location updates, needs to update embedding function for 'query nodes/COM of gases'
 
-## VMD Tool and steps to use to view predictions are under (tools folder)[https://github.com/BJWiley233/E3_gas_probing/tree/main/tools]
+## VMD Tool and steps to use to view predictions are under [tools folder](https://github.com/BJWiley233/E3_gas_probing/tree/main/tools)
